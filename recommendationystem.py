@@ -15,9 +15,9 @@ import torch.optim as optim
 from torch.autograd import Variable
 
 # Importing the dataset
-movies = pd.read_csv('ml-1m/movies.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')
-users = pd.read_csv('ml-1m/users.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')
-ratings = pd.read_csv('ml-1m/ratings.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')
+movies = pd.read_csv('movies.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')
+users = pd.read_csv('users.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')
+ratings = pd.read_csv('ratings.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')
 
 # Preparing the training set and the test set
 training_set = pd.read_csv('ml-100k/u1.base', delimiter = '\t')
